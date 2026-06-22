@@ -1,0 +1,35 @@
+# ---------------------------------------------------------------------------
+# Central configuration for the Qatar trade panel analysis.
+# Logic lives in R/; *what* to run lives here. Change the spec without
+# editing code. Read once in analysis/00_setup.R via yaml::read_yaml().
+# ---------------------------------------------------------------------------
+
+data:
+  # Relative to project root (resolve with here::here()). The real file is
+  # supplied by the user into data/raw/ (see data/README.md).
+  path: "data/raw/Qatar_Data_V.1.0.xlsx"
+  sheet: "data_for_model"
+
+panel:
+  index: ["country", "year"]
+  # Group A = the four states that imposed the 2017 blockade on Qatar.
+  group_a_countries: ["Saudi", "UAE", "Bahrain", "Egypt"]
+  # Group B = every other country (defined as the complement of Group A).
+
+model:
+  # The canonical gravity specification used throughout the study.
+  formula: "ln_trade ~ ln_cti + ln_gdpc + distance + crises"
+  # Specification after stationarity remediation (ln_gdpc -> d_ln_gdpc).
+  formula_differenced: "ln_trade ~ ln_cti + d_ln_gdpc + distance + crises"
+  random_methods: ["walhus", "amemiya", "nerlove"]
+
+stationarity:
+  variables: ["ln_trade", "ln_cti", "ln_gdpc", "d_ln_gdpc"]
+  panel_tests: ["ips", "madwu", "Pm", "invnormal", "logit", "hadri"]
+  lags: 1
+  exo: "intercept"
+  min_obs_per_country: 6
+
+output:
+  tables_dir: "output/tables"
+  figures_dir: "output/figures"

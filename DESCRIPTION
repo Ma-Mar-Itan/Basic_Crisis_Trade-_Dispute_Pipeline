@@ -1,0 +1,38 @@
+Package: ProjectIBR
+Title: Qatar Trade & Blockade Panel Analysis
+Version: 0.0.0.9000
+Authors@R:
+    person("Malek", role = c("aut", "cre"),
+           email = "marwan.y.itani@gmail.com")
+Description: Reproducible econometric analysis of the 2017 Qatar diplomatic
+    crisis on bilateral trade, using a gravity model on a country-year panel.
+    Provides functions for data loading, panel construction, stationarity
+    testing, fixed/random/pooled/CRE estimation, robust inference, and
+    diagnostics. Structured as a project-as-package so logic in R/ is unit
+    tested while analysis/ and _targets.R orchestrate the pipeline.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports:
+    plm,
+    readxl,
+    dplyr,
+    tidyr,
+    tibble,
+    purrr,
+    sandwich,
+    lmtest,
+    tseries,
+    writexl,
+    yaml
+Suggests:
+    testthat (>= 3.0.0),
+    targets,
+    quarto,
+    modelsummary,
+    flextable,
+    officer,
+    ggplot2,
+    psych
+Config/testthat/edition: 3

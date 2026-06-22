@@ -1,0 +1,25 @@
+"variable","test_code","test","specification","lags","countries","observations","statistic_name","statistic","degrees_freedom","p_value","null_hypothesis","conclusion_5pct","error"
+"ln_trade","ips","Im-Pesaran-Shin","intercept",1,8,184,"Wtbar",-1.49339174176416,NA,0.0676673366974494,"Unit root","Fail to reject unit root",NA
+"ln_trade","madwu","Maddala-Wu","intercept",1,8,184,"chisq",24.1959671002799,"df = 16",0.0853108768136031,"Unit root","Fail to reject unit root",NA
+"ln_trade","Pm","Choi Modified P","intercept",1,8,184,"Pm",1.44885597874745,NA,0.0736889034805871,"Unit root","Fail to reject unit root",NA
+"ln_trade","invnormal","Choi Inverse Normal","intercept",1,8,184,"z",-1.66511296300985,NA,0.0479451104921002,"Unit root","Reject unit root; evidence of stationarity",NA
+"ln_trade","logit","Choi Logit","intercept",1,8,184,"L*",-1.61850123645228,"df = 44",0.0563508486539923,"Unit root","Fail to reject unit root",NA
+"ln_trade","hadri","Hadri","intercept",1,8,184,"z",16.9088357294365,NA,1.93641958867713e-64,"Stationarity","Reject stationarity; evidence that at least one panel series has a unit root",NA
+"ln_cti","ips","Im-Pesaran-Shin","intercept",1,8,184,"Wtbar",-2.12504917840785,NA,0.0167912547840265,"Unit root","Reject unit root; evidence of stationarity",NA
+"ln_cti","madwu","Maddala-Wu","intercept",1,8,184,"chisq",34.019932355972,"df = 16",0.00539952557574499,"Unit root","Reject unit root; evidence of stationarity",NA
+"ln_cti","Pm","Choi Modified P","intercept",1,8,184,"Pm",3.18550409135768,NA,0.000722510303175839,"Unit root","Reject unit root; evidence of stationarity",NA
+"ln_cti","invnormal","Choi Inverse Normal","intercept",1,8,184,"z",-2.36779881619464,NA,0.00894713168514963,"Unit root","Reject unit root; evidence of stationarity",NA
+"ln_cti","logit","Choi Logit","intercept",1,8,184,"L*",-2.80227306943753,"df = 44",0.00375849778014612,"Unit root","Reject unit root; evidence of stationarity",NA
+"ln_cti","hadri","Hadri","intercept",1,8,184,"z",22.557701728682,NA,5.64173213305674e-113,"Stationarity","Reject stationarity; evidence that at least one panel series has a unit root",NA
+"ln_gdpc","ips","Im-Pesaran-Shin","intercept",1,8,184,"Wtbar",-1.97885182137756,NA,0.0239163459917448,"Unit root","Reject unit root; evidence of stationarity",NA
+"ln_gdpc","madwu","Maddala-Wu","intercept",1,8,184,"chisq",26.9242825668378,"df = 16",0.0423324438421364,"Unit root","Reject unit root; evidence of stationarity",NA
+"ln_gdpc","Pm","Choi Modified P","intercept",1,8,184,"Pm",1.93115857065225,NA,0.0267317228196409,"Unit root","Reject unit root; evidence of stationarity",NA
+"ln_gdpc","invnormal","Choi Inverse Normal","intercept",1,8,184,"z",-2.22493930444606,NA,0.0130426564989144,"Unit root","Reject unit root; evidence of stationarity",NA
+"ln_gdpc","logit","Choi Logit","intercept",1,8,184,"L*",-2.162710008551,"df = 44",0.0180197345101169,"Unit root","Reject unit root; evidence of stationarity",NA
+"ln_gdpc","hadri","Hadri","intercept",1,8,184,"z",18.2268716566674,NA,1.57940539213277e-74,"Stationarity","Reject stationarity; evidence that at least one panel series has a unit root",NA
+"d_ln_gdpc","ips","Im-Pesaran-Shin","intercept",1,8,176,"Wtbar",-3.47741413013933,NA,0.000253137593928287,"Unit root","Reject unit root; evidence of stationarity",NA
+"d_ln_gdpc","madwu","Maddala-Wu","intercept",1,8,176,"chisq",41.7797113247177,"df = 16",0.000425565803097889,"Unit root","Reject unit root; evidence of stationarity",NA
+"d_ln_gdpc","Pm","Choi Modified P","intercept",1,8,176,"Pm",4.55725217368488,NA,2.59135929915187e-06,"Unit root","Reject unit root; evidence of stationarity",NA
+"d_ln_gdpc","invnormal","Choi Inverse Normal","intercept",1,8,176,"z",-4.0588591059472,NA,2.46565271878842e-05,"Unit root","Reject unit root; evidence of stationarity",NA
+"d_ln_gdpc","logit","Choi Logit","intercept",1,8,176,"L*",-4.02780405750683,"df = 44",0.000109637096340882,"Unit root","Reject unit root; evidence of stationarity",NA
+"d_ln_gdpc","hadri","Hadri","intercept",1,8,176,"z",1.01549740998339,NA,0.154934390270254,"Stationarity","Fail to reject stationarity",NA
